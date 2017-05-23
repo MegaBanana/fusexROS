@@ -1,0 +1,8 @@
+prefix=/home/vivien/fusexRos/devel
+
+Name: trajecto
+Description: Description of trajecto
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/vivien/fusexRos/devel/lib 
+Requires: 

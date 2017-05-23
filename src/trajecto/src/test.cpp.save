@@ -1,0 +1,39 @@
+#include "ros/ros.h"
+#include "robot_localization/ros_filter_types.h"
+#include <sstream>
+
+
+using RobotLocalization::Ukf;
+
+
+class RosUkfPassThrough : public RosUkf
+{
+  public:
+    explicit RosUkfPassThrough(std::vector<double> &args) : RosUkf(args)
+    {
+    }
+
+    Ukf &getFilter()
+    {
+      return filter_;
+    }
+};
+
+int main(int argc, char **argv)
+{
+  ros::init(argc, argv, "ukf");
+
+  ros::NodeHandle nh;
+
+  ros::Publisher odomPub = nh.advertise<nav_msgs::Odometry>("/imu_input0", 5);
+
+  ros::Subscriber filteredSub = nh.subscribe("/odometry/filtered", 1, &filterCallba
+  odom.pose.
+
+  ros::NodeHandle n;
+
+  ros::
+
+  testing::InitGoogleTest(&argc, argv);
+  return RUN_ALL_TESTS();
+}

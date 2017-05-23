@@ -1,0 +1,8 @@
+prefix=/home/vivien/fusexRos/devel
+
+Name: MadgwickQuaternionUpdate
+Description: Description of MadgwickQuaternionUpdate
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/vivien/fusexRos/devel/lib 
+Requires: 

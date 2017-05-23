@@ -1,0 +1,8 @@
+prefix=/home/vivien/fusexRos/devel
+
+Name: beginner_tuto
+Description: Description of beginner_tuto
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/vivien/fusexRos/devel/lib 
+Requires: 
